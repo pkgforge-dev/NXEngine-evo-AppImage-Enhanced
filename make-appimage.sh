@@ -3,7 +3,7 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q nxengine-evo | awk '{print $2; exit}') # example command to get version of application here
+VERSION=$(pacman -Q nxengine-evo-git | awk '{print $2; exit}') # example command to get version of application here
 export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"

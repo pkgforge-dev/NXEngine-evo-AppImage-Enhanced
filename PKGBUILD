@@ -27,7 +27,7 @@ build() {
 	cd "${_pkgname}"
 	mkdir build
 	cd build
-    cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_BUILD_TYPE=Release -DPORTABLE=ON -Wno-dev -DCMAKE_INSTALL_PREFIX=/usr ..
+    cmake -DCMAKE_BUILD_TYPE=Release -Wno-dev -DCMAKE_INSTALL_PREFIX=/usr ..
     make
 
 	cd ../

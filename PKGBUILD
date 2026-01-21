@@ -1,5 +1,5 @@
 # Maintainer: ibrokemypie <ibrokemypie@bastardi.net>
-pkgname=nxengine-evo
+pkgname=nxengine-evo-git
 pkgver=2.6.5.1
 _ver=2.6.5-1
 _langver=1.14

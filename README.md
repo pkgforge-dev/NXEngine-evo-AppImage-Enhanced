@@ -13,7 +13,7 @@
 
 | Latest Stable Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/NXEngine-evo-AppImageEnhanced/releases/latest) | [Click here](https://github.com/nxengine/nxengine-evo) |
+| [Click here](https://github.com/pkgforge-dev/NXEngine-evo-AppImage-Enhanced/releases/latest) | [Click here](https://github.com/nxengine/nxengine-evo) |
 
 </div>
 

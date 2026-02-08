@@ -29,6 +29,11 @@ git clone "$REPO" ./NXEngine-evo
 echo "$VERSION" > ~/version
 
 cd ./NXEngine-evo
+wget https://www.cavestory.org/downloads/cavestoryen.zip
+wget https://github.com/nxengine/translations/releases/download/v1.14/all.zip
+bsdtar -xvf ./cavestoryen.zip
+bsdtar -xvf ./all.zip
+ls
 mkdir -p build && cd build
 cmake .. \
     -DCMAKE_BUILD_TYPE=Release \

@@ -47,4 +47,4 @@ cp -r ../data/ .
 make install
 cd ..
 mv -v /usr/bin/nxengine-evo ../AppDir/bin
-mv -v /usr/share/nxengine ../AppDir/share
+mkdir -p ../AppDir/share && mv -v /usr/share/nxengine ../AppDir/share/

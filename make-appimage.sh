@@ -8,6 +8,7 @@ export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
+export APPNAME="Cave Story NX"
 export ICON=/usr/share/icons/hicolor/256x256/apps/org.nxengine.nxengine_evo.png
 export DESKTOP=/usr/share/applications/org.nxengine.nxengine_evo.desktop
 export DEPLOY_OPENGL=1

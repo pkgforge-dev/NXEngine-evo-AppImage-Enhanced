@@ -37,14 +37,16 @@ bsdtar -xvf ./all.zip
 mkdir -p build && cd build
 cmake .. \
     -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
-    -DCMAKE_INSTALL_PREFIX="/usr"
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+    #-DCMAKE_INSTALL_PREFIX="/usr"
 make -j$(nproc)
 cp -r ../CaveStory/data/ .
 cp ../CaveStory/Doukutsu.exe .
 cp -r ../data/ .
 ./nxextract
-make install
+mv -v nxengine-evo ../AppDir/bin
+mv -v nxengine ../AppDir/bin
+#make install
 #cd ..
 #mv -v /usr/bin/nxengine-evo ../AppDir/bin
 #mkdir -p ../AppDir/share && mv -v /usr/share/nxengine ../AppDir/share/

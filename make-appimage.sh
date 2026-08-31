@@ -15,7 +15,7 @@ export STARTUPWMCLASS=nxengine-evo
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/nxengine-evo
+quick-sharun ./AppDir/bin/nxengine-evo
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage

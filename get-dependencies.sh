@@ -23,6 +23,7 @@ git clone "$REPO" ./NXEngine-evo
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
+mkdir -p ./AppDir/share/nxengine
 cd ./NXEngine-evo
 wget https://www.cavestory.org/downloads/cavestoryen.zip
 wget https://github.com/nxengine/translations/releases/download/v1.14/all.zip
@@ -37,7 +38,5 @@ cp -r "../CaveStory/data/" "./"
 cp "../CaveStory/Doukutsu.exe" "./"
 cp -r "../data/" "./"
 ./nxextract
-make install
 mv -v nxengine-evo ../../AppDir/bin
-cd ..
-mv -v /usr/share/nxengine ../AppDir/bin
+mv -v data ../../AppDir/share/nxengine

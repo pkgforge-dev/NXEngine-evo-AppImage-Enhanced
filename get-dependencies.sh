@@ -35,8 +35,7 @@ bsdtar -xvf ./all.zip
 mkdir -p build && cd build
 cmake .. \
     -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
-    -DCMAKE_INSTALL_PREFIX="/usr"
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 make -j$(nproc)
 cp -r "../CaveStory/data/" "./"
 cp "../CaveStory/Doukutsu.exe" "./"

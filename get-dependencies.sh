@@ -19,7 +19,7 @@ echo "Building NXEngine-evo..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/nxengine/nxengine-evo"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
-git clone "$REPO" ./NXEngine-evo
+git clone --depth 1 "$REPO" ./NXEngine-evo
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin

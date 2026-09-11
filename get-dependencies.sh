@@ -26,13 +26,10 @@ wget https://github.com/nxengine/translations/releases/download/v1.14/all.zip
 bsdtar -xvf ./cavestoryen.zip
 bsdtar -xvf ./all.zip
 mkdir -p build && cd build
-cmake .. \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
-    -DPORTABLE=ON
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DPORTABLE=ON
 make -j$(nproc)
-cp -r "../CaveStory/data/" "./"
-cp "../CaveStory/Doukutsu.exe" "./"
-cp -r "../data/" "./"
+cp -r ../CaveStory/data/ ./
+cp ../CaveStory/Doukutsu.exe ./
+cp -r ../data/ ./
 ./nxextract
 mv -v nxengine-evo data ../../AppDir/bin
